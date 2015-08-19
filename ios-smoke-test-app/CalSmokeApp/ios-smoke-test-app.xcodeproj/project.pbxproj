@@ -1,0 +1,910 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1a6fb43aa140ae563e019cce /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB1B1987EF8700299AEF /* main.m */; };
+		4306c7a674ae559b3806ebb3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = a66015686499dbb45da8c3c4 /* CFNetwork.framework */; };
+		4d0c7f3c9aec5f7df4bec8e1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB0F1987EF8700299AEF /* Foundation.framework */; };
+		50dcfd2fda33dd49fb5c0808 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42539422bf8ed8e8569bc355 /* calabash.framework */; };
+		814483887d80377735a56b6a /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB111987EF8700299AEF /* CoreGraphics.framework */; };
+		F5097D071B6B7C0E00326D6A /* CalGestureListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */; };
+		F5097D081B6B7C0E00326D6A /* CalGestureListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */; };
+		F52252BD1B75FD27004235EF /* CalAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52252BC1B75FD27004235EF /* CalAnimatedView.m */; };
+		F52252BE1B75FD27004235EF /* CalAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52252BC1B75FD27004235EF /* CalAnimatedView.m */; };
+		F52B40BA1B4A66430022AEC8 /* CalTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B40B91B4A66430022AEC8 /* CalTabBarController.m */; };
+		F52B40BB1B4A66430022AEC8 /* CalTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B40B91B4A66430022AEC8 /* CalTabBarController.m */; };
+		F52BFB101987EF8700299AEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB0F1987EF8700299AEF /* Foundation.framework */; };
+		F52BFB121987EF8700299AEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB111987EF8700299AEF /* CoreGraphics.framework */; };
+		F52BFB141987EF8700299AEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB131987EF8700299AEF /* UIKit.framework */; };
+		F52BFB1A1987EF8700299AEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52BFB181987EF8700299AEF /* InfoPlist.strings */; };
+		F52BFB1C1987EF8700299AEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB1B1987EF8700299AEF /* main.m */; };
+		F52BFB201987EF8700299AEF /* CalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB1F1987EF8700299AEF /* CalAppDelegate.m */; };
+		F52BFB291987EF8700299AEF /* CalControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB281987EF8700299AEF /* CalControlsController.m */; };
+		F52BFB2B1987EF8700299AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52BFB2A1987EF8700299AEF /* Images.xcassets */; };
+		F55081B51ACD4F5400F226A1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55081B41ACD4F5400F226A1 /* WebKit.framework */; };
+		F550CDD11B60CFC400D57B57 /* CalTapGestureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F550CDCF1B60CFC400D57B57 /* CalTapGestureController.xib */; };
+		F550CDD21B60CFC400D57B57 /* CalTapGestureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F550CDCF1B60CFC400D57B57 /* CalTapGestureController.xib */; };
+		F550CDE01B63770B00D57B57 /* CalViewsThatScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F550CDDE1B63770B00D57B57 /* CalViewsThatScrollController.xib */; };
+		F550CDE11B63770B00D57B57 /* CalViewsThatScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F550CDDE1B63770B00D57B57 /* CalViewsThatScrollController.xib */; };
+		F550CDE51B63832500D57B57 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CDE41B63832500D57B57 /* UIView+Positioning.m */; };
+		F550CDE61B63832500D57B57 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CDE41B63832500D57B57 /* UIView+Positioning.m */; };
+		F550CDE91B63837800D57B57 /* UIColor+LjsAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CDE81B63837800D57B57 /* UIColor+LjsAdditions.m */; };
+		F550CDEA1B63837800D57B57 /* UIColor+LjsAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CDE81B63837800D57B57 /* UIColor+LjsAdditions.m */; };
+		F550CDED1B6383E400D57B57 /* UIImage+LjsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CDEC1B6383E400D57B57 /* UIImage+LjsCategory.m */; };
+		F550CDEE1B6383E400D57B57 /* UIImage+LjsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CDEC1B6383E400D57B57 /* UIImage+LjsCategory.m */; };
+		F550CDFE1B63A26500D57B57 /* CalCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F550CDFC1B63A26500D57B57 /* CalCollectionViewController.xib */; };
+		F550CDFF1B63A26500D57B57 /* CalCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F550CDFC1B63A26500D57B57 /* CalCollectionViewController.xib */; };
+		F550CE031B63A41300D57B57 /* CalBarButtonItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE021B63A41300D57B57 /* CalBarButtonItemFactory.m */; };
+		F550CE041B63A41300D57B57 /* CalBarButtonItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE021B63A41300D57B57 /* CalBarButtonItemFactory.m */; };
+		F550CE091B63A57A00D57B57 /* LjsLabelAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE061B63A57A00D57B57 /* LjsLabelAttributes.m */; };
+		F550CE0A1B63A57A00D57B57 /* LjsLabelAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE061B63A57A00D57B57 /* LjsLabelAttributes.m */; };
+		F550CE0B1B63A57A00D57B57 /* NSString+IOSSizeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE081B63A57A00D57B57 /* NSString+IOSSizeOf.m */; };
+		F550CE0C1B63A57A00D57B57 /* NSString+IOSSizeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE081B63A57A00D57B57 /* NSString+IOSSizeOf.m */; };
+		F550CE151B63AE9E00D57B57 /* CalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE121B63AE9E00D57B57 /* CalCollectionViewController.m */; };
+		F550CE161B63AE9E00D57B57 /* CalCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE121B63AE9E00D57B57 /* CalCollectionViewController.m */; };
+		F550CE171B63AE9E00D57B57 /* CalViewsThatScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE141B63AE9E00D57B57 /* CalViewsThatScrollController.m */; };
+		F550CE181B63AE9E00D57B57 /* CalViewsThatScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = F550CE141B63AE9E00D57B57 /* CalViewsThatScrollController.m */; };
+		F55185551AC34BB600CE06DC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = F55185541AC34BB600CE06DC /* iTunesArtwork */; };
+		F55185561AC34BB600CE06DC /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = F55185541AC34BB600CE06DC /* iTunesArtwork */; };
+		F571F76B1B45843B00CA108B /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F571F76A1B45843B00CA108B /* Reveal.framework */; };
+		F58C9F9C1B707501007D307B /* CalGestureListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9F9B1B707501007D307B /* CalGestureListController.m */; };
+		F58C9F9D1B707501007D307B /* CalGestureListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9F9B1B707501007D307B /* CalGestureListController.m */; };
+		F58C9FA01B707631007D307B /* CalPanController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9F9F1B707631007D307B /* CalPanController.m */; };
+		F58C9FA11B707631007D307B /* CalPanController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9F9F1B707631007D307B /* CalPanController.m */; };
+		F58C9FA81B707842007D307B /* CalPanController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FA61B707842007D307B /* CalPanController.xib */; };
+		F58C9FA91B707842007D307B /* CalPanController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FA61B707842007D307B /* CalPanController.xib */; };
+		F58C9FAD1B72191B007D307B /* CalPinchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FAB1B72191B007D307B /* CalPinchController.m */; };
+		F58C9FAE1B72191B007D307B /* CalPinchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FAB1B72191B007D307B /* CalPinchController.m */; };
+		F58C9FB31B72194D007D307B /* CalPinchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FB11B72194D007D307B /* CalPinchController.xib */; };
+		F58C9FB41B72194D007D307B /* CalPinchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FB11B72194D007D307B /* CalPinchController.xib */; };
+		F58C9FB61B7262E6007D307B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58C9FB51B7262E6007D307B /* MapKit.framework */; };
+		F58C9FB71B7262F2007D307B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58C9FB51B7262E6007D307B /* MapKit.framework */; };
+		F58C9FB81B72630C007D307B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55081B41ACD4F5400F226A1 /* WebKit.framework */; };
+		F58C9FBB1B7264AF007D307B /* CalMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FBA1B7264AF007D307B /* CalMapView.m */; };
+		F58C9FBC1B7264AF007D307B /* CalMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FBA1B7264AF007D307B /* CalMapView.m */; };
+		F58C9FC01B72663D007D307B /* CalMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FBE1B72663D007D307B /* CalMapController.m */; };
+		F58C9FC11B72663D007D307B /* CalMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FBE1B72663D007D307B /* CalMapController.m */; };
+		F58C9FC61B72665E007D307B /* CalMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FC41B72665E007D307B /* CalMapController.xib */; };
+		F58C9FC71B72665E007D307B /* CalMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FC41B72665E007D307B /* CalMapController.xib */; };
+		F58C9FCA1B735A61007D307B /* CalTapGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FC91B735A61007D307B /* CalTapGestureController.m */; };
+		F58C9FCB1B735A61007D307B /* CalTapGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FC91B735A61007D307B /* CalTapGestureController.m */; };
+		F58C9FD21B73715A007D307B /* CalControlsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FD01B73715A007D307B /* CalControlsController.xib */; };
+		F58C9FD31B73715A007D307B /* CalControlsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FD01B73715A007D307B /* CalControlsController.xib */; };
+		F58C9FD61B7395C2007D307B /* CalViewWithArbitrarySelectors.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FD51B7395C2007D307B /* CalViewWithArbitrarySelectors.m */; };
+		F58C9FD71B7395C2007D307B /* CalViewWithArbitrarySelectors.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FD51B7395C2007D307B /* CalViewWithArbitrarySelectors.m */; };
+		F58C9FDA1B73AD91007D307B /* CalDatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FD91B73AD91007D307B /* CalDatePickerController.m */; };
+		F58C9FDB1B73AD91007D307B /* CalDatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FD91B73AD91007D307B /* CalDatePickerController.m */; };
+		F58C9FDE1B73AE68007D307B /* CalDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FDD1B73AE68007D307B /* CalDatePickerView.m */; };
+		F58C9FDF1B73AE68007D307B /* CalDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C9FDD1B73AE68007D307B /* CalDatePickerView.m */; };
+		F58C9FE21B73B7EA007D307B /* CalDatePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FE01B73B7EA007D307B /* CalDatePickerController.xib */; };
+		F58C9FE31B73B7EA007D307B /* CalDatePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58C9FE01B73B7EA007D307B /* CalDatePickerController.xib */; };
+		F590CBBF1B683A6200F0E39E /* CalScollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F590CBBD1B683A6200F0E39E /* CalScollViewController.m */; };
+		F590CBC01B683A6200F0E39E /* CalScollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F590CBBD1B683A6200F0E39E /* CalScollViewController.m */; };
+		F590CBC51B683A7C00F0E39E /* CalScollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F590CBC31B683A7C00F0E39E /* CalScollViewController.xib */; };
+		F590CBC61B683A7C00F0E39E /* CalScollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F590CBC31B683A7C00F0E39E /* CalScollViewController.xib */; };
+		F5A31D0C1B664BD00094B768 /* CalTableViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A31D0A1B664BD00094B768 /* CalTableViewContoller.m */; };
+		F5A31D0D1B664BD00094B768 /* CalTableViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A31D0A1B664BD00094B768 /* CalTableViewContoller.m */; };
+		F5A31D121B664BF90094B768 /* CalTableViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A31D101B664BF90094B768 /* CalTableViewContoller.xib */; };
+		F5A31D131B664BF90094B768 /* CalTableViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A31D101B664BF90094B768 /* CalTableViewContoller.xib */; };
+		F5C276331B3B546A00DF63FA /* CalDragDropController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C276311B3B546A00DF63FA /* CalDragDropController.xib */; };
+		F5C276341B3B546A00DF63FA /* CalDragDropController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C276311B3B546A00DF63FA /* CalDragDropController.xib */; };
+		F5C276371B3B547900DF63FA /* CalDragDropController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C276361B3B547900DF63FA /* CalDragDropController.m */; };
+		F5C276381B3B547900DF63FA /* CalDragDropController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C276361B3B547900DF63FA /* CalDragDropController.m */; };
+		a851e37816c4ddd975adbf58 /* CalControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB281987EF8700299AEF /* CalControlsController.m */; };
+		ab943fbf9d0ac91728d35abe /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BFB131987EF8700299AEF /* UIKit.framework */; };
+		cc8f9377c616d69147b3de31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52BFB2A1987EF8700299AEF /* Images.xcassets */; };
+		e3e0a6761f42ce3d10829b2b /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52BFB181987EF8700299AEF /* InfoPlist.strings */; };
+		f23b5a94a19df2bb34667ee7 /* CalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BFB1F1987EF8700299AEF /* CalAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42539422bf8ed8e8569bc355 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		F5097D061B6B7C0E00326D6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalGestureListController.xib; sourceTree = "<group>"; };
+		F52252BB1B75FD27004235EF /* CalAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalAnimatedView.h; sourceTree = "<group>"; };
+		F52252BC1B75FD27004235EF /* CalAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalAnimatedView.m; sourceTree = "<group>"; };
+		F52B40B81B4A66430022AEC8 /* CalTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalTabBarController.h; sourceTree = "<group>"; };
+		F52B40B91B4A66430022AEC8 /* CalTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalTabBarController.m; sourceTree = "<group>"; };
+		F52BFB0C1987EF8700299AEF /* CalSmoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalSmoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52BFB0F1987EF8700299AEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F52BFB111987EF8700299AEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F52BFB131987EF8700299AEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F52BFB171987EF8700299AEF /* CalSmoke-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalSmoke-Info.plist"; sourceTree = "<group>"; };
+		F52BFB191987EF8700299AEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F52BFB1B1987EF8700299AEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F52BFB1D1987EF8700299AEF /* CalSmoke-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalSmoke-Prefix.pch"; sourceTree = "<group>"; };
+		F52BFB1E1987EF8700299AEF /* CalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalAppDelegate.h; sourceTree = "<group>"; };
+		F52BFB1F1987EF8700299AEF /* CalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalAppDelegate.m; sourceTree = "<group>"; };
+		F52BFB271987EF8700299AEF /* CalControlsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalControlsController.h; sourceTree = "<group>"; };
+		F52BFB281987EF8700299AEF /* CalControlsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalControlsController.m; sourceTree = "<group>"; };
+		F52BFB2A1987EF8700299AEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F55081B41ACD4F5400F226A1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F550CDD01B60CFC400D57B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalTapGestureController.xib; sourceTree = "<group>"; };
+		F550CDDF1B63770B00D57B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalViewsThatScrollController.xib; sourceTree = "<group>"; };
+		F550CDE31B63832500D57B57 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		F550CDE41B63832500D57B57 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		F550CDE71B63837800D57B57 /* UIColor+LjsAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LjsAdditions.h"; sourceTree = "<group>"; };
+		F550CDE81B63837800D57B57 /* UIColor+LjsAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LjsAdditions.m"; sourceTree = "<group>"; };
+		F550CDEB1B6383E400D57B57 /* UIImage+LjsCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LjsCategory.h"; sourceTree = "<group>"; };
+		F550CDEC1B6383E400D57B57 /* UIImage+LjsCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LjsCategory.m"; sourceTree = "<group>"; };
+		F550CDFD1B63A26500D57B57 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalCollectionViewController.xib; sourceTree = "<group>"; };
+		F550CE011B63A41300D57B57 /* CalBarButtonItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalBarButtonItemFactory.h; sourceTree = "<group>"; };
+		F550CE021B63A41300D57B57 /* CalBarButtonItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalBarButtonItemFactory.m; sourceTree = "<group>"; };
+		F550CE051B63A57A00D57B57 /* LjsLabelAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LjsLabelAttributes.h; sourceTree = "<group>"; };
+		F550CE061B63A57A00D57B57 /* LjsLabelAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LjsLabelAttributes.m; sourceTree = "<group>"; };
+		F550CE071B63A57A00D57B57 /* NSString+IOSSizeOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IOSSizeOf.h"; sourceTree = "<group>"; };
+		F550CE081B63A57A00D57B57 /* NSString+IOSSizeOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IOSSizeOf.m"; sourceTree = "<group>"; };
+		F550CE111B63AE9E00D57B57 /* CalCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalCollectionViewController.h; path = ScrollControllers/CalCollectionViewController.h; sourceTree = "<group>"; };
+		F550CE121B63AE9E00D57B57 /* CalCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalCollectionViewController.m; path = ScrollControllers/CalCollectionViewController.m; sourceTree = "<group>"; };
+		F550CE131B63AE9E00D57B57 /* CalViewsThatScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalViewsThatScrollController.h; path = ScrollControllers/CalViewsThatScrollController.h; sourceTree = "<group>"; };
+		F550CE141B63AE9E00D57B57 /* CalViewsThatScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalViewsThatScrollController.m; path = ScrollControllers/CalViewsThatScrollController.m; sourceTree = "<group>"; };
+		F55185541AC34BB600CE06DC /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		F571F76A1B45843B00CA108B /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		F58C9F9A1B707501007D307B /* CalGestureListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalGestureListController.h; sourceTree = "<group>"; };
+		F58C9F9B1B707501007D307B /* CalGestureListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalGestureListController.m; sourceTree = "<group>"; };
+		F58C9F9E1B707631007D307B /* CalPanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalPanController.h; sourceTree = "<group>"; };
+		F58C9F9F1B707631007D307B /* CalPanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalPanController.m; sourceTree = "<group>"; };
+		F58C9FA71B707842007D307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalPanController.xib; sourceTree = "<group>"; };
+		F58C9FAA1B72191B007D307B /* CalPinchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalPinchController.h; sourceTree = "<group>"; };
+		F58C9FAB1B72191B007D307B /* CalPinchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalPinchController.m; sourceTree = "<group>"; };
+		F58C9FB21B72194D007D307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalPinchController.xib; sourceTree = "<group>"; };
+		F58C9FB51B7262E6007D307B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F58C9FB91B7264AF007D307B /* CalMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalMapView.h; sourceTree = "<group>"; };
+		F58C9FBA1B7264AF007D307B /* CalMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalMapView.m; sourceTree = "<group>"; };
+		F58C9FBD1B72663D007D307B /* CalMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalMapController.h; path = ScrollControllers/CalMapController.h; sourceTree = "<group>"; };
+		F58C9FBE1B72663D007D307B /* CalMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalMapController.m; path = ScrollControllers/CalMapController.m; sourceTree = "<group>"; };
+		F58C9FC51B72665E007D307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalMapController.xib; sourceTree = "<group>"; };
+		F58C9FC81B735A61007D307B /* CalTapGestureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalTapGestureController.h; sourceTree = "<group>"; };
+		F58C9FC91B735A61007D307B /* CalTapGestureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalTapGestureController.m; sourceTree = "<group>"; };
+		F58C9FD11B73715A007D307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalControlsController.xib; sourceTree = "<group>"; };
+		F58C9FD41B7395C2007D307B /* CalViewWithArbitrarySelectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalViewWithArbitrarySelectors.h; sourceTree = "<group>"; };
+		F58C9FD51B7395C2007D307B /* CalViewWithArbitrarySelectors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalViewWithArbitrarySelectors.m; sourceTree = "<group>"; };
+		F58C9FD81B73AD91007D307B /* CalDatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalDatePickerController.h; sourceTree = "<group>"; };
+		F58C9FD91B73AD91007D307B /* CalDatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalDatePickerController.m; sourceTree = "<group>"; };
+		F58C9FDC1B73AE68007D307B /* CalDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalDatePickerView.h; sourceTree = "<group>"; };
+		F58C9FDD1B73AE68007D307B /* CalDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalDatePickerView.m; sourceTree = "<group>"; };
+		F58C9FE11B73B7EA007D307B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalDatePickerController.xib; sourceTree = "<group>"; };
+		F590CBBC1B683A6200F0E39E /* CalScollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalScollViewController.h; path = ScrollControllers/CalScollViewController.h; sourceTree = "<group>"; };
+		F590CBBD1B683A6200F0E39E /* CalScollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalScollViewController.m; path = ScrollControllers/CalScollViewController.m; sourceTree = "<group>"; };
+		F590CBC41B683A7C00F0E39E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalScollViewController.xib; sourceTree = "<group>"; };
+		F5A31D091B664BD00094B768 /* CalTableViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalTableViewContoller.h; path = ScrollControllers/CalTableViewContoller.h; sourceTree = "<group>"; };
+		F5A31D0A1B664BD00094B768 /* CalTableViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalTableViewContoller.m; path = ScrollControllers/CalTableViewContoller.m; sourceTree = "<group>"; };
+		F5A31D111B664BF90094B768 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalTableViewContoller.xib; sourceTree = "<group>"; };
+		F5C276321B3B546A00DF63FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalDragDropController.xib; sourceTree = "<group>"; };
+		F5C276351B3B547900DF63FA /* CalDragDropController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalDragDropController.h; sourceTree = "<group>"; };
+		F5C276361B3B547900DF63FA /* CalDragDropController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalDragDropController.m; sourceTree = "<group>"; };
+		F5FE79621988070200842E74 /* CalSmoke-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalSmoke-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		a66015686499dbb45da8c3c4 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		146d6a283e5268ae50e42bb6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58C9FB71B7262F2007D307B /* MapKit.framework in Frameworks */,
+				F571F76B1B45843B00CA108B /* Reveal.framework in Frameworks */,
+				F55081B51ACD4F5400F226A1 /* WebKit.framework in Frameworks */,
+				814483887d80377735a56b6a /* CoreGraphics.framework in Frameworks */,
+				ab943fbf9d0ac91728d35abe /* UIKit.framework in Frameworks */,
+				4d0c7f3c9aec5f7df4bec8e1 /* Foundation.framework in Frameworks */,
+				4306c7a674ae559b3806ebb3 /* CFNetwork.framework in Frameworks */,
+				50dcfd2fda33dd49fb5c0808 /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52BFB091987EF8700299AEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58C9FB81B72630C007D307B /* WebKit.framework in Frameworks */,
+				F58C9FB61B7262E6007D307B /* MapKit.framework in Frameworks */,
+				F52BFB121987EF8700299AEF /* CoreGraphics.framework in Frameworks */,
+				F52BFB141987EF8700299AEF /* UIKit.framework in Frameworks */,
+				F52BFB101987EF8700299AEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52BFB031987EF8700299AEF = {
+			isa = PBXGroup;
+			children = (
+				F52BFB151987EF8700299AEF /* CalSmokeApp */,
+				F52BFB0E1987EF8700299AEF /* Frameworks */,
+				F52BFB0D1987EF8700299AEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F52BFB0D1987EF8700299AEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F52BFB0C1987EF8700299AEF /* CalSmoke.app */,
+				F5FE79621988070200842E74 /* CalSmoke-cal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F52BFB0E1987EF8700299AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F58C9FB51B7262E6007D307B /* MapKit.framework */,
+				F571F76A1B45843B00CA108B /* Reveal.framework */,
+				F55081B41ACD4F5400F226A1 /* WebKit.framework */,
+				F52BFB0F1987EF8700299AEF /* Foundation.framework */,
+				F52BFB111987EF8700299AEF /* CoreGraphics.framework */,
+				F52BFB131987EF8700299AEF /* UIKit.framework */,
+				a66015686499dbb45da8c3c4 /* CFNetwork.framework */,
+				42539422bf8ed8e8569bc355 /* calabash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52BFB151987EF8700299AEF /* CalSmokeApp */ = {
+			isa = PBXGroup;
+			children = (
+				F52B40B81B4A66430022AEC8 /* CalTabBarController.h */,
+				F52B40B91B4A66430022AEC8 /* CalTabBarController.m */,
+				F52BFB1E1987EF8700299AEF /* CalAppDelegate.h */,
+				F52BFB1F1987EF8700299AEF /* CalAppDelegate.m */,
+				F550CE001B63A41300D57B57 /* Views */,
+				F550CDE21B63832500D57B57 /* Vendor */,
+				F52BFB271987EF8700299AEF /* CalControlsController.h */,
+				F52BFB281987EF8700299AEF /* CalControlsController.m */,
+				F58C9F991B707501007D307B /* GestureControllers */,
+				F5C276351B3B547900DF63FA /* CalDragDropController.h */,
+				F5C276361B3B547900DF63FA /* CalDragDropController.m */,
+				F58C9FD81B73AD91007D307B /* CalDatePickerController.h */,
+				F58C9FD91B73AD91007D307B /* CalDatePickerController.m */,
+				F550CDD51B63761000D57B57 /* ScrollControllers */,
+				F52BFB2A1987EF8700299AEF /* Images.xcassets */,
+				F5C276301B3B545A00DF63FA /* XIB */,
+				F52BFB161987EF8700299AEF /* Supporting Files */,
+			);
+			path = CalSmokeApp;
+			sourceTree = "<group>";
+		};
+		F52BFB161987EF8700299AEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F55185541AC34BB600CE06DC /* iTunesArtwork */,
+				F52BFB171987EF8700299AEF /* CalSmoke-Info.plist */,
+				F52BFB181987EF8700299AEF /* InfoPlist.strings */,
+				F52BFB1B1987EF8700299AEF /* main.m */,
+				F52BFB1D1987EF8700299AEF /* CalSmoke-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F550CDD51B63761000D57B57 /* ScrollControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F550CE131B63AE9E00D57B57 /* CalViewsThatScrollController.h */,
+				F550CE141B63AE9E00D57B57 /* CalViewsThatScrollController.m */,
+				F5A31D091B664BD00094B768 /* CalTableViewContoller.h */,
+				F5A31D0A1B664BD00094B768 /* CalTableViewContoller.m */,
+				F550CE111B63AE9E00D57B57 /* CalCollectionViewController.h */,
+				F550CE121B63AE9E00D57B57 /* CalCollectionViewController.m */,
+				F590CBBC1B683A6200F0E39E /* CalScollViewController.h */,
+				F590CBBD1B683A6200F0E39E /* CalScollViewController.m */,
+				F58C9FBD1B72663D007D307B /* CalMapController.h */,
+				F58C9FBE1B72663D007D307B /* CalMapController.m */,
+			);
+			name = ScrollControllers;
+			sourceTree = "<group>";
+		};
+		F550CDDD1B6376C500D57B57 /* ScrollControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F550CDDE1B63770B00D57B57 /* CalViewsThatScrollController.xib */,
+				F5A31D101B664BF90094B768 /* CalTableViewContoller.xib */,
+				F550CDFC1B63A26500D57B57 /* CalCollectionViewController.xib */,
+				F590CBC31B683A7C00F0E39E /* CalScollViewController.xib */,
+				F58C9FC41B72665E007D307B /* CalMapController.xib */,
+			);
+			name = ScrollControllers;
+			sourceTree = "<group>";
+		};
+		F550CDE21B63832500D57B57 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F550CE051B63A57A00D57B57 /* LjsLabelAttributes.h */,
+				F550CE061B63A57A00D57B57 /* LjsLabelAttributes.m */,
+				F550CE071B63A57A00D57B57 /* NSString+IOSSizeOf.h */,
+				F550CE081B63A57A00D57B57 /* NSString+IOSSizeOf.m */,
+				F550CDEB1B6383E400D57B57 /* UIImage+LjsCategory.h */,
+				F550CDEC1B6383E400D57B57 /* UIImage+LjsCategory.m */,
+				F550CDE71B63837800D57B57 /* UIColor+LjsAdditions.h */,
+				F550CDE81B63837800D57B57 /* UIColor+LjsAdditions.m */,
+				F550CDE31B63832500D57B57 /* UIView+Positioning.h */,
+				F550CDE41B63832500D57B57 /* UIView+Positioning.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F550CE001B63A41300D57B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F52252BB1B75FD27004235EF /* CalAnimatedView.h */,
+				F52252BC1B75FD27004235EF /* CalAnimatedView.m */,
+				F58C9FDC1B73AE68007D307B /* CalDatePickerView.h */,
+				F58C9FDD1B73AE68007D307B /* CalDatePickerView.m */,
+				F550CE011B63A41300D57B57 /* CalBarButtonItemFactory.h */,
+				F550CE021B63A41300D57B57 /* CalBarButtonItemFactory.m */,
+				F58C9FB91B7264AF007D307B /* CalMapView.h */,
+				F58C9FBA1B7264AF007D307B /* CalMapView.m */,
+				F58C9FD41B7395C2007D307B /* CalViewWithArbitrarySelectors.h */,
+				F58C9FD51B7395C2007D307B /* CalViewWithArbitrarySelectors.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F58C9F911B6FB6F5007D307B /* GesturesControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */,
+				F58C9FA61B707842007D307B /* CalPanController.xib */,
+				F58C9FB11B72194D007D307B /* CalPinchController.xib */,
+			);
+			name = GesturesControllers;
+			sourceTree = "<group>";
+		};
+		F58C9F991B707501007D307B /* GestureControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F58C9F9A1B707501007D307B /* CalGestureListController.h */,
+				F58C9F9B1B707501007D307B /* CalGestureListController.m */,
+				F58C9FC81B735A61007D307B /* CalTapGestureController.h */,
+				F58C9FC91B735A61007D307B /* CalTapGestureController.m */,
+				F58C9F9E1B707631007D307B /* CalPanController.h */,
+				F58C9F9F1B707631007D307B /* CalPanController.m */,
+				F58C9FAA1B72191B007D307B /* CalPinchController.h */,
+				F58C9FAB1B72191B007D307B /* CalPinchController.m */,
+			);
+			path = GestureControllers;
+			sourceTree = "<group>";
+		};
+		F58C9FCC1B737087007D307B /* ControlControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F58C9FD01B73715A007D307B /* CalControlsController.xib */,
+			);
+			name = ControlControllers;
+			sourceTree = "<group>";
+		};
+		F5C276301B3B545A00DF63FA /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				F58C9FCC1B737087007D307B /* ControlControllers */,
+				F58C9F911B6FB6F5007D307B /* GesturesControllers */,
+				F550CDDD1B6376C500D57B57 /* ScrollControllers */,
+				F550CDCF1B60CFC400D57B57 /* CalTapGestureController.xib */,
+				F5C276311B3B546A00DF63FA /* CalDragDropController.xib */,
+				F58C9FE01B73B7EA007D307B /* CalDatePickerController.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F52BFB0B1987EF8700299AEF /* CalSmoke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52BFB411987EF8700299AEF /* Build configuration list for PBXNativeTarget "CalSmoke" */;
+			buildPhases = (
+				F52BFB081987EF8700299AEF /* Sources */,
+				F52BFB091987EF8700299AEF /* Frameworks */,
+				F52BFB0A1987EF8700299AEF /* Resources */,
+				F51F2E8E1AB359A6002326D0 /* Run Script Add Calabash dylibs to Bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalSmoke;
+			productName = chou;
+			productReference = F52BFB0C1987EF8700299AEF /* CalSmoke.app */;
+			productType = "com.apple.product-type.application";
+		};
+		aa8f030ac9159ee56ef3af27 /* CalSmoke-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39829f2db80767feb51f256c /* Build configuration list for PBXNativeTarget "CalSmoke-cal" */;
+			buildPhases = (
+				b17dee660dc338602790258e /* Sources */,
+				146d6a283e5268ae50e42bb6 /* Frameworks */,
+				5fe138bfdd8a11df266b0f94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalSmoke-cal";
+			productName = "chou-cal";
+			productReference = F5FE79621988070200842E74 /* CalSmoke-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F52BFB041987EF8700299AEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Cal;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Calabash;
+			};
+			buildConfigurationList = F52BFB071987EF8700299AEF /* Build configuration list for PBXProject "ios-smoke-test-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F52BFB031987EF8700299AEF;
+			productRefGroup = F52BFB0D1987EF8700299AEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F52BFB0B1987EF8700299AEF /* CalSmoke */,
+				aa8f030ac9159ee56ef3af27 /* CalSmoke-cal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5fe138bfdd8a11df266b0f94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				cc8f9377c616d69147b3de31 /* Images.xcassets in Resources */,
+				F5C276341B3B546A00DF63FA /* CalDragDropController.xib in Resources */,
+				F550CDE11B63770B00D57B57 /* CalViewsThatScrollController.xib in Resources */,
+				F58C9FC71B72665E007D307B /* CalMapController.xib in Resources */,
+				F58C9FA91B707842007D307B /* CalPanController.xib in Resources */,
+				F55185561AC34BB600CE06DC /* iTunesArtwork in Resources */,
+				F58C9FE31B73B7EA007D307B /* CalDatePickerController.xib in Resources */,
+				F58C9FD31B73715A007D307B /* CalControlsController.xib in Resources */,
+				F590CBC61B683A7C00F0E39E /* CalScollViewController.xib in Resources */,
+				e3e0a6761f42ce3d10829b2b /* InfoPlist.strings in Resources */,
+				F550CDD21B60CFC400D57B57 /* CalTapGestureController.xib in Resources */,
+				F550CDFF1B63A26500D57B57 /* CalCollectionViewController.xib in Resources */,
+				F58C9FB41B72194D007D307B /* CalPinchController.xib in Resources */,
+				F5097D081B6B7C0E00326D6A /* CalGestureListController.xib in Resources */,
+				F5A31D131B664BF90094B768 /* CalTableViewContoller.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52BFB0A1987EF8700299AEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52BFB2B1987EF8700299AEF /* Images.xcassets in Resources */,
+				F5C276331B3B546A00DF63FA /* CalDragDropController.xib in Resources */,
+				F550CDE01B63770B00D57B57 /* CalViewsThatScrollController.xib in Resources */,
+				F58C9FC61B72665E007D307B /* CalMapController.xib in Resources */,
+				F58C9FA81B707842007D307B /* CalPanController.xib in Resources */,
+				F55185551AC34BB600CE06DC /* iTunesArtwork in Resources */,
+				F58C9FE21B73B7EA007D307B /* CalDatePickerController.xib in Resources */,
+				F58C9FD21B73715A007D307B /* CalControlsController.xib in Resources */,
+				F590CBC51B683A7C00F0E39E /* CalScollViewController.xib in Resources */,
+				F52BFB1A1987EF8700299AEF /* InfoPlist.strings in Resources */,
+				F550CDD11B60CFC400D57B57 /* CalTapGestureController.xib in Resources */,
+				F550CDFE1B63A26500D57B57 /* CalCollectionViewController.xib in Resources */,
+				F58C9FB31B72194D007D307B /* CalPinchController.xib in Resources */,
+				F5097D071B6B7C0E00326D6A /* CalGestureListController.xib in Resources */,
+				F5A31D121B664BF90094B768 /* CalTableViewContoller.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F51F2E8E1AB359A6002326D0 /* Run Script Add Calabash dylibs to Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Add Calabash dylibs to Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script/xcode-build-phase/add-calabash-dylibs-to-bundle.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F52BFB081987EF8700299AEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58C9FA01B707631007D307B /* CalPanController.m in Sources */,
+				F52BFB1C1987EF8700299AEF /* main.m in Sources */,
+				F58C9FC01B72663D007D307B /* CalMapController.m in Sources */,
+				F52BFB291987EF8700299AEF /* CalControlsController.m in Sources */,
+				F58C9FCA1B735A61007D307B /* CalTapGestureController.m in Sources */,
+				F550CE031B63A41300D57B57 /* CalBarButtonItemFactory.m in Sources */,
+				F58C9FAD1B72191B007D307B /* CalPinchController.m in Sources */,
+				F550CE091B63A57A00D57B57 /* LjsLabelAttributes.m in Sources */,
+				F5A31D0C1B664BD00094B768 /* CalTableViewContoller.m in Sources */,
+				F5C276371B3B547900DF63FA /* CalDragDropController.m in Sources */,
+				F58C9F9C1B707501007D307B /* CalGestureListController.m in Sources */,
+				F550CDED1B6383E400D57B57 /* UIImage+LjsCategory.m in Sources */,
+				F52BFB201987EF8700299AEF /* CalAppDelegate.m in Sources */,
+				F52B40BA1B4A66430022AEC8 /* CalTabBarController.m in Sources */,
+				F58C9FDA1B73AD91007D307B /* CalDatePickerController.m in Sources */,
+				F52252BD1B75FD27004235EF /* CalAnimatedView.m in Sources */,
+				F58C9FDE1B73AE68007D307B /* CalDatePickerView.m in Sources */,
+				F58C9FBB1B7264AF007D307B /* CalMapView.m in Sources */,
+				F58C9FD61B7395C2007D307B /* CalViewWithArbitrarySelectors.m in Sources */,
+				F590CBBF1B683A6200F0E39E /* CalScollViewController.m in Sources */,
+				F550CE171B63AE9E00D57B57 /* CalViewsThatScrollController.m in Sources */,
+				F550CE0B1B63A57A00D57B57 /* NSString+IOSSizeOf.m in Sources */,
+				F550CDE91B63837800D57B57 /* UIColor+LjsAdditions.m in Sources */,
+				F550CDE51B63832500D57B57 /* UIView+Positioning.m in Sources */,
+				F550CE151B63AE9E00D57B57 /* CalCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		b17dee660dc338602790258e /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58C9FA11B707631007D307B /* CalPanController.m in Sources */,
+				1a6fb43aa140ae563e019cce /* main.m in Sources */,
+				F58C9FC11B72663D007D307B /* CalMapController.m in Sources */,
+				a851e37816c4ddd975adbf58 /* CalControlsController.m in Sources */,
+				F58C9FCB1B735A61007D307B /* CalTapGestureController.m in Sources */,
+				F550CE041B63A41300D57B57 /* CalBarButtonItemFactory.m in Sources */,
+				F58C9FAE1B72191B007D307B /* CalPinchController.m in Sources */,
+				F550CE0A1B63A57A00D57B57 /* LjsLabelAttributes.m in Sources */,
+				F5A31D0D1B664BD00094B768 /* CalTableViewContoller.m in Sources */,
+				F5C276381B3B547900DF63FA /* CalDragDropController.m in Sources */,
+				F58C9F9D1B707501007D307B /* CalGestureListController.m in Sources */,
+				F550CDEE1B6383E400D57B57 /* UIImage+LjsCategory.m in Sources */,
+				f23b5a94a19df2bb34667ee7 /* CalAppDelegate.m in Sources */,
+				F52B40BB1B4A66430022AEC8 /* CalTabBarController.m in Sources */,
+				F58C9FDB1B73AD91007D307B /* CalDatePickerController.m in Sources */,
+				F52252BE1B75FD27004235EF /* CalAnimatedView.m in Sources */,
+				F58C9FDF1B73AE68007D307B /* CalDatePickerView.m in Sources */,
+				F58C9FBC1B7264AF007D307B /* CalMapView.m in Sources */,
+				F58C9FD71B7395C2007D307B /* CalViewWithArbitrarySelectors.m in Sources */,
+				F590CBC01B683A6200F0E39E /* CalScollViewController.m in Sources */,
+				F550CE181B63AE9E00D57B57 /* CalViewsThatScrollController.m in Sources */,
+				F550CE0C1B63A57A00D57B57 /* NSString+IOSSizeOf.m in Sources */,
+				F550CDEA1B63837800D57B57 /* UIColor+LjsAdditions.m in Sources */,
+				F550CDE61B63832500D57B57 /* UIView+Positioning.m in Sources */,
+				F550CE161B63AE9E00D57B57 /* CalCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5097D051B6B7C0E00326D6A /* CalGestureListController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5097D061B6B7C0E00326D6A /* en */,
+			);
+			name = CalGestureListController.xib;
+			sourceTree = "<group>";
+		};
+		F52BFB181987EF8700299AEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52BFB191987EF8700299AEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F550CDCF1B60CFC400D57B57 /* CalTapGestureController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F550CDD01B60CFC400D57B57 /* en */,
+			);
+			name = CalTapGestureController.xib;
+			sourceTree = "<group>";
+		};
+		F550CDDE1B63770B00D57B57 /* CalViewsThatScrollController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F550CDDF1B63770B00D57B57 /* en */,
+			);
+			name = CalViewsThatScrollController.xib;
+			sourceTree = "<group>";
+		};
+		F550CDFC1B63A26500D57B57 /* CalCollectionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F550CDFD1B63A26500D57B57 /* en */,
+			);
+			name = CalCollectionViewController.xib;
+			sourceTree = "<group>";
+		};
+		F58C9FA61B707842007D307B /* CalPanController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58C9FA71B707842007D307B /* en */,
+			);
+			name = CalPanController.xib;
+			sourceTree = "<group>";
+		};
+		F58C9FB11B72194D007D307B /* CalPinchController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58C9FB21B72194D007D307B /* en */,
+			);
+			name = CalPinchController.xib;
+			sourceTree = "<group>";
+		};
+		F58C9FC41B72665E007D307B /* CalMapController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58C9FC51B72665E007D307B /* en */,
+			);
+			name = CalMapController.xib;
+			sourceTree = "<group>";
+		};
+		F58C9FD01B73715A007D307B /* CalControlsController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58C9FD11B73715A007D307B /* en */,
+			);
+			name = CalControlsController.xib;
+			sourceTree = "<group>";
+		};
+		F58C9FE01B73B7EA007D307B /* CalDatePickerController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58C9FE11B73B7EA007D307B /* en */,
+			);
+			name = CalDatePickerController.xib;
+			sourceTree = "<group>";
+		};
+		F590CBC31B683A7C00F0E39E /* CalScollViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F590CBC41B683A7C00F0E39E /* en */,
+			);
+			name = CalScollViewController.xib;
+			sourceTree = "<group>";
+		};
+		F5A31D101B664BF90094B768 /* CalTableViewContoller.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5A31D111B664BF90094B768 /* en */,
+			);
+			name = CalTableViewContoller.xib;
+			sourceTree = "<group>";
+		};
+		F5C276311B3B546A00DF63FA /* CalDragDropController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C276321B3B546A00DF63FA /* en */,
+			);
+			name = CalDragDropController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		491a6ef5af9d742e85958355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalSmokeApp/CalSmoke-Prefix.pch";
+				INFOPLIST_FILE = "CalSmokeApp/CalSmoke-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_NAME = "CalSmoke-cal";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F52BFB3F1987EF8700299AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F52BFB401987EF8700299AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F52BFB421987EF8700299AEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalSmokeApp/CalSmoke-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = LOAD_CALABASH_DYLIB;
+				INFOPLIST_FILE = "CalSmokeApp/CalSmoke-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = CalSmoke;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F52BFB431987EF8700299AEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalSmokeApp/CalSmoke-Prefix.pch";
+				INFOPLIST_FILE = "CalSmokeApp/CalSmoke-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = CalSmoke;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ff6ea1aa1822ebfc92849c2a /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CalSmokeApp/CalSmoke-Prefix.pch";
+				INFOPLIST_FILE = "CalSmokeApp/CalSmoke-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_NAME = "CalSmoke-cal";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39829f2db80767feb51f256c /* Build configuration list for PBXNativeTarget "CalSmoke-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ff6ea1aa1822ebfc92849c2a /* Debug */,
+				491a6ef5af9d742e85958355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F52BFB071987EF8700299AEF /* Build configuration list for PBXProject "ios-smoke-test-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52BFB3F1987EF8700299AEF /* Debug */,
+				F52BFB401987EF8700299AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F52BFB411987EF8700299AEF /* Build configuration list for PBXNativeTarget "CalSmoke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52BFB421987EF8700299AEF /* Debug */,
+				F52BFB431987EF8700299AEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F52BFB041987EF8700299AEF /* Project object */;
+}
